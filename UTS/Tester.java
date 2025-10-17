@@ -12,7 +12,6 @@ public class Tester {
         System.out.println(b.getBarrierInfo());
         System.out.println("-------------------------");
 
-        // Plant menyerang musuh 4 kali
         for (int i = 0; i < 4; i++) {
             p.doDestroy(wz);
             p.doDestroy(jz);

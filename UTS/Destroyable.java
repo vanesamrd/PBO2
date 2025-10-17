@@ -1,5 +1,5 @@
 package UTS;
 
-public interface Destroyable {
+public abstract class Destroyable {
      public abstract void destroyed();
 }

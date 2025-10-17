@@ -1,6 +1,6 @@
 package UTS;
 
-public class Barrier implements Destroyable {
+public class Barrier extends Destroyable {
     private int strength;
 
     public Barrier(int strength) {
@@ -18,13 +18,11 @@ public class Barrier implements Destroyable {
     @Override
     public void destroyed() {
         strength -= 9;
-        if (strength <= 0) {
-            strength = 0;
-            System.out.println("Barrier kalah!");
-        }
+        if (strength < 0) strength = 0;
     }
 
     public String getBarrierInfo() {
         return "Barrier Strength = " + strength;
     }
 }
+
