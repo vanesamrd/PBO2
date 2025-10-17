@@ -14,9 +14,14 @@ public abstract class Zombie extends Destroyable {
     @Override
     public abstract void destroyed();
 
+    public boolean isDead() {
+        return health <=0;
+    }
+
     public String getZombieInfo() {
         return "Health = " + health + "\nLevel = " + level;
     }
 }
+
 
 
